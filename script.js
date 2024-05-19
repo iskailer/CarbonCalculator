@@ -92,11 +92,20 @@ document.getElementById('loadTableBtn').addEventListener('click', function () {
     displaySavedData();
 });
 
+import Shepherd from 'shepherd.js';
+
+    Shepherd.init(shp_c8f7a36376b1cb52244340d8bbb4d2a5a647f49241f03ced45f4f4b602e8ba03);
+
         document.addEventListener('DOMContentLoaded', function () {
             var tour = new Shepherd.Tour({
+                id: 'clwctze0k0001owds0qqoztd3',
                 defaultStepOptions: {
+                    cancelIcon: {
+                      enabled: true,
+                    },
                     classes: 'shepherd-theme-arrows'
-                }
+                },
+                useModalOverlay: true,
             });
 
             // Passo para o input de combustível
