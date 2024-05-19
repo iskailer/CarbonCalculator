@@ -1,4 +1,5 @@
-import Shepherd from 'https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.js';
+import { Shepherd } from 'https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.esm.min.js';
+
 Shepherd.init(shp_c8f7a36376b1cb52244340d8bbb4d2a5a647f49241f03ced45f4f4b602e8ba03);
 
 const db = new PouchDB('carbon_footprint');
